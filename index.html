@@ -1,1 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>cad-boxx.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta https-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Lato:300,400|PT+Sans:400,700");
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+
+        body {
+            background: #f1f2f3;
+        }
+
+        .row-outer {
+            padding: 20px 0;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1160px;
+            margin: auto;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .grid-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 'item1 item1 item2 item3'
+                'item4 item4 item2 item5'
+                'item4 item4 item2 item6';
+            grid-gap: 10px;
+        }
+
+        .item {
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            background-position: center !important;
+            min-height: 12rem;
+            cursor: pointer;
+            background: red;
+        }
+
+        .item1 {
+            grid-area: item1;
+            background: #4b00ff url(item1.jpg);
+            background-position: top !important;
+        }
+
+        .item2 {
+            grid-area: item2;
+            background: #4b00ff url(item2.jpg);
+        }
+
+        .item3 {
+            grid-area: item3;
+            background: #4b00ff url(item3.jpg);
+        }
+
+        .item4 {
+            grid-area: item4;
+            background: #4b00ff url(item4.jpg);
+        }
+
+        .item5 {
+            grid-area: item5;
+            background: #4b00ff url(item5.jpg);
+        }
+
+        .item6 {
+            grid-area: item6;
+            background: #4b00ff url(item6.jpg);
+        }
+
+
+        @media (max-width: 768px) {
+            .grid-gallery {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: "item1 item1 item2"
+                    "item3 item4 item2"
+                    "item5 item6 item2";
+            }
+        }
+
+        @media (max-width: 620px) {
+            .grid-gallery {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "item1 item3"
+                    "item2 item4"
+                    "item2 item5"
+                    "item2 item6";
+            }
+        }
+
+
+        @media (max-width: 360px) {
+            .grid-gallery {
+                grid-template-columns: 1fr;
+                grid-template-areas: "item1"
+                    "item2"
+                    "item3"
+                    "item4"
+                    "item5"
+                    "item6";
+            }
+
+            .item2 {
+                background-position: top;
+            }
+        }
+    </style>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            .fakeimg {
+                height: 200px;
+                background: #aaa;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="jumbotron text-center"  style="width:100%;margin-bottom:0"><img src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/1234.JPG?v=1691596484393" />
+            <center>
+                <h1>cad-boxx.com</h1>
+                <p>Assembly of 3D Models</p>
+            </center>
+            
+        </div>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="https://cad-box.com">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://sketchfab.com/fasteng/" target="_blank">Sketchfab</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/" target="_blank" >Spoke</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/" target="_blank" >GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://cad-boxx.com/register.html" target="_blank" >cad-boxx</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://cad-boxx.com/utils.html" target="_blank" >UTILS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://cad-boxx.com/dashboard.html" target="_blank" >Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Model Library</h3>
+                <p>Our users ave access tp hundreds of high-quality parametric models for use in their work.</p>
+                <p></p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Assemble/Connect 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Animations/Simulations</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+
+    <!---->
+    
+        
+        
+        <div class="row-outer">
+            <div class="container">
+                <div class="heading"><h1>Responsive Css Grid Gallery</h1></div>
+
+                <div class="grid-gallery">
+                    <div class="item item1"></div>
+                    <div class="item item2"></div>
+                    <div class="item item3"></div>
+                    <div class="item item4"></div>
+                    <div class="item item5"></div>
+                    <div class="item item6"></div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const buttons = document.querySelectorAll('.project');
+            const overlay = document.querySelector('.overlay');
+            const overlayImage = document.querySelector('.overlay__inner img');
+
+            function open(e) {
+                overlay.classList.add('open');
+                const src = e.currentTarget.querySelector('img').src;
+                overlayImage.src = src;
+            }
+
+            function close() {
+                overlay.classList.remove('open');
+            }
+
+            buttons.forEach(button => button.addEventListener('click', open));
+            overlay.addEventListener('click', close);
+
+
+        </script>
+    
+<!---->
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>3D MODELS</h3>
+            <p>All our models are hosted on Skethfab.com and can be placed into an app with a single click.</p>
+            <p>Users have the choice of downloading the model or placing it into a networked app.</p>
+        </div>
+        <div class="col-sm-4">
+            <h3>CADBOXX APP 2</h3>
+            <p>The cadboxx app assembles 3D Models and connects them with dynamic joints.</p>
+            <p>Users can  download unlimited assemblies and joints for use in their work..</p>
+        </div>
+        <div class="col-sm-4">
+            <h3>ALL THINGS 3D</h3>
+            <p>We create everything ourselves and pass the savings on to our customers.  ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>We sell Toys, Games, VR Experiences and basically anything 3D.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
